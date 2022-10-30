@@ -11,23 +11,26 @@ public class hesapmak {
 
         System.out.println("Toplama -1- \nÇıkarma-2- \nÇarpma-3- \nBölme-4-");
         int secim=dat.nextInt();
-        double sonuc=0;
 
         switch (secim) {
             case 1:
-                sonuc = a + b;
-            break;
+                System.out.println((a + b));
+                break;
             case 2:
-                sonuc = a - b;
-            break;
+                System.out.println((a - b));
+                break;
             case 3:
-                sonuc = a * b;
-            break;
+                System.out.println((a * b));
+                break;
             case 4:
-                sonuc = a / b;
-            break;
+                if(b==0) System.out.println("bir sayı sıfıra bölünemez");
+                else System.out.println((a / b));
+                break;
+
+            default:
+                System.out.println("hatalı seçim");
         }
-            System.out.println(sonuc);
+
 
 
     }
